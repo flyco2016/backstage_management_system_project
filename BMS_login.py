@@ -5,12 +5,17 @@ from utils import get_BMS_url_info
 
 
 def BMSLogin(user_name='admin', password='123456'):
-    #data = get_API_info.BMS_login_data % (repr(user_name), repr(password))
-    #print(data, type(data), type(json.dumps(data)), sep='\n')
-    r = requests.post(get_BMS_url_info.BMS_login_url 
-    %(repr(user_name), repr(password)))
-    #print(r.text)
-    return r.json()
+    r = requests.post(get_BMS_url_info.BMS_login_url %(user_name, password))
+    return r
 
+"""
+def getLoginInfo(user_name='admin', password='123456'):
+    r = BMSLogin(user_name=user_name, password=password)['data']
+
+    info_dict = dict(
+                     
+    )
+"""
+   
 if __name__ == '__main__':
-    BMSLogin()
+    print(BMSLogin())
