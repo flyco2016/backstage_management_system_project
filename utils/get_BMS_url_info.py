@@ -23,3 +23,14 @@ appeal_judge_seller_win_url = BMS_url_config.get_config_value("BMSurlconfig", "B
 # 判定买家胜诉
 appeal_judge_buyer_win_url = BMS_url_config.get_config_value("BMSurlconfig", "BMS_curb_exchange_url", 'appeal_judge_buyer_win_url')
 
+"""
+后台币币相关业务
+"""
+# 获取吃单机器人列表
+get_eat_robot_list_url = BMS_url_config.get_config_value("BMSurlconfig", "BMS_C2C_exchange_url", 'get_eat_robot_list_url')
+# 根据币种获取吃单机器人
+get_eat_robot_info_url = BMS_url_config.get_config_value("BMSurlconfig", "BMS_C2C_exchange_url", 'get_eat_robot_info_url')
+# 增加新的吃单机器人
+add_new_eat_robot_url = BMS_url_config.get_config_value("BMSurlconfig", "BMS_C2C_exchange_url", 'add_new_eat_robot_url')
+# 修改吃单机器人
+modify_eat_robot_url = BMS_url_config.get_config_value("BMSurlconfig", "BMS_C2C_exchange_url", 'modify_eat_robot_url')
