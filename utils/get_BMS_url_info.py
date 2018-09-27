@@ -34,3 +34,5 @@ get_eat_robot_info_url = BMS_url_config.get_config_value("BMSurlconfig", "BMS_C2
 add_new_eat_robot_url = BMS_url_config.get_config_value("BMSurlconfig", "BMS_C2C_exchange_url", 'add_new_eat_robot_url')
 # 修改吃单机器人
 modify_eat_robot_url = BMS_url_config.get_config_value("BMSurlconfig", "BMS_C2C_exchange_url", 'modify_eat_robot_url')
+# 删除吃单机器人
+delete_eat_robot_url = BMS_url_config.get_config_value("BMSurlconfig", "BMS_C2C_exchange_url", 'delete_eat_robot_url')
